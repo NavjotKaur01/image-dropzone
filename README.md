@@ -1,2 +1,1 @@
-# image-dropzone
-Handles drag and drop of files
+# image-dropzone-typescript-package
