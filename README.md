@@ -5,7 +5,7 @@
 ![npm-typescript]
 [![License][github-license]][github-license-url]
 
-It is simple React counter.
+It is simple Image drag and drop.
 
 ## Installation:
 
