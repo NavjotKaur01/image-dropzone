@@ -1,3 +1,3 @@
-import MyCounter from './components/App'
+import ImageDropZone from './components/App'
 
-export { MyCounter }
+export { ImageDropZone }
