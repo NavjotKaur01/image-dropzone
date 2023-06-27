@@ -11,7 +11,7 @@ interface Props {
 const ImageDropZone = forwardRef(({ from, sendUploadImage, handleResetImage, handleChangeImage }: Props, ref) => {
   useImperativeHandle(ref, () => ({
     handleSetPath(image: string, imageType: string) {
-      setPaths([`data:image/${imageType}base64, ${image}`])
+      setPaths([`data:image/${imageType};base64, ${image}`])
     },
     removePath() {
       setPaths([])

@@ -3,7 +3,7 @@ export const getBase64 = (file: File, cb: (readerResult: any) => void) => {
   reader.readAsDataURL(file)
   reader.onload = function () {
     const result: any = reader.result
-    const strImage = result.replace(/^data:image\/[a-z]+base64,/, '')
+    const strImage = result.replace(/^data:image\/[a-z]+;base64,/, '')
     cb(strImage)
   }
   reader.onerror = function (error) {
