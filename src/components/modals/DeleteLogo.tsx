@@ -1,5 +1,5 @@
 import React from 'react'
-import crossIcon from '/static/img/cross-icon.svg'
+import crossIcon from '../../assets/images/cross-icon.svg'
 
 interface Props {
   handleDelete: () => void

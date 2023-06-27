@@ -2,6 +2,8 @@ import React, { forwardRef, useState, useImperativeHandle } from 'react'
 import { acceptedFileFormats, getBase64 } from '../utilities/utils'
 import Dropzone from 'react-dropzone'
 import DeleteLogo from './modals/DeleteLogo'
+import Edit from '../assets/images/edit-icon.svg'
+import Trash from '../assets/images/trash.svg'
 
 interface Props {
   from?: string
@@ -77,7 +79,7 @@ const ImageDropZone = forwardRef(({ from, sendUploadImage, handleResetImage, han
       {!!paths.length && (
         <div className='d-flex align-items-center justify-content-center mt-2'>
           <button className='btn-with-border fw-bold border-0 bg-transparent' type='button' onClick={handleChange}>
-            {/* <img src={Edit} className='me-2 edit-icon' /> */}
+            <img src={Edit} className='me-2 edit-icon' />
             <span className='light-text'>Change</span>
           </button>
           {from === 'businessLogo' && (
@@ -87,7 +89,7 @@ const ImageDropZone = forwardRef(({ from, sendUploadImage, handleResetImage, han
               data-bs-toggle='modal'
               data-bs-target='#DeleteLogo'
             >
-              {/* <img src={Trash} className='me-2' /> */}
+              <img src={Trash} className='me-2' />
               <span className='danger-text'>Delete</span>
             </button>
           )}
