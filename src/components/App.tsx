@@ -4,6 +4,7 @@ import Dropzone from 'react-dropzone'
 import DeleteLogo from './modals/DeleteLogo'
 import Edit from '../assets/images/edit-icon.svg'
 import Trash from '../assets/images/trash.svg'
+import '../style.css'
 
 interface Props {
   from?: string
