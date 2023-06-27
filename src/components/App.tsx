@@ -1,6 +1,7 @@
 import React, { forwardRef, useState, useImperativeHandle } from 'react'
 import { acceptedFileFormats, getBase64 } from '../utilities/utils'
 import Dropzone from 'react-dropzone'
+import DeleteLogo from './modals/DeleteLogo'
 
 interface Props {
   from?: string
@@ -43,12 +44,12 @@ const ImageDropZone = forwardRef(({ from, sendUploadImage, handleResetImage, han
     setPaths([])
   }
 
-  // const handleDelete = () => {
-  //   handleResetImage?.()
-  //   setPaths([])
-  //   const closeDeleteLogoModalBtn = document.getElementById('closeDeleteLogoModalBtn')
-  //   closeDeleteLogoModalBtn?.click()
-  // }
+  const handleDelete = () => {
+    handleResetImage?.()
+    setPaths([])
+    const closeDeleteLogoModalBtn = document.getElementById('closeDeleteLogoModalBtn')
+    closeDeleteLogoModalBtn?.click()
+  }
 
   return (
     <>
@@ -93,7 +94,7 @@ const ImageDropZone = forwardRef(({ from, sendUploadImage, handleResetImage, han
         </div>
       )}
 
-      {/* <DeleteLogo handleDelete={handleDelete} /> */}
+      <DeleteLogo handleDelete={handleDelete} />
     </>
   )
 })
