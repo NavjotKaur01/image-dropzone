@@ -1,4 +1,4 @@
-import React, { forwardRef, useState, useImperativeHandle } from 'react'
+import React, { forwardRef, useState, useImperativeHandle, useEffect } from 'react'
 import { acceptedFileFormats, getBase64 } from '../utilities/utils'
 import Dropzone from 'react-dropzone'
 import DeleteLogo from './modals/DeleteLogo'
@@ -25,8 +25,16 @@ const ImageDropZone = forwardRef(({ from, sendUploadImage, handleResetImage, han
       setBackupImage([])
     },
   }))
+
   const [paths, setPaths] = useState<string[]>([])
   const [backupImage, setBackupImage] = useState<string[]>([])
+
+  useEffect(() => {
+    return () => {
+      setPaths([])
+      setBackupImage([])
+    }
+  }, [])
 
   const handleUploadImage = (acceptedFiles: any) => {
     getBase64(acceptedFiles[0], (result) => {
