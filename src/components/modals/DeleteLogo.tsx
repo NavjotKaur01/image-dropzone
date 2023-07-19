@@ -11,7 +11,7 @@ const DeleteLogo = ({ handleDelete }: Props) => {
       <div className='modal-dialog modal-dialog-centered w-481'>
         <div className='modal-content p-40'>
           <div className='modal-header border-0 p-0 align-items-center mb-40'>
-            <h2 className='main-h mb-0'>Delete Logo?</h2>
+            <h2 className='main-h mb-0'>Delete Photo?</h2>
 
             <button
               type='button'
