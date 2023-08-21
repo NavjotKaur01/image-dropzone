@@ -29,6 +29,7 @@ const DeleteLogo = ({ handleDelete }: Props) => {
                 type='button'
                 className='btn primary-btn form-btn btn-w-fit btn-with-border w-100 fw-bold me-3 dlt-btn'
                 onClick={() => handleDelete()}
+                data-testid='delete-img'
               >
                 Delete
               </button>
