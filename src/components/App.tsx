@@ -76,7 +76,7 @@ const ImageDropZone = forwardRef(
           {({ getRootProps, getInputProps }) => (
             <section className='drop-zone d-flex align-items-center justify-content-center text-center cursor-pointer'>
               <div {...getRootProps()} className='w-100 h-100 d-flex align-items-center justify-content-center'>
-                <input {...getInputProps()} />
+                <input data-testid='dropZone' {...getInputProps()} />
                 {paths.length ? (
                   paths.map((path) => <img className='w-100 h-100' key={path} src={path} />)
                 ) : (
@@ -90,12 +90,18 @@ const ImageDropZone = forwardRef(
         </Dropzone>
         {!!paths.length && (
           <div className='d-flex align-items-center justify-content-center mt-2'>
-            <button className='btn-with-border fw-bold border-0 bg-transparent' type='button' onClick={handleChange}>
+            <button
+              data-testid='change-img-btn'
+              className='btn-with-border fw-bold border-0 bg-transparent'
+              type='button'
+              onClick={handleChange}
+            >
               <img src={Edit} className='me-2 edit-icon' />
               <span className='light-text'>Change</span>
             </button>
             {!!showDelete && (
               <button
+                data-testid='delete-btn'
                 className='btn-with-border fw-bold border-0 bg-transparent'
                 type='button'
                 data-bs-toggle='modal'
