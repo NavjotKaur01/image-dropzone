@@ -26,14 +26,15 @@ const DeleteLogo = ({ handleDelete }: Props) => {
           <div className='modal-body p-0 fw-bold'>
             <div className='d-flex'>
               <button
+                data-testid='delete-img'
                 type='button'
                 className='btn primary-btn form-btn btn-w-fit btn-with-border w-100 fw-bold me-3 dlt-btn'
                 onClick={() => handleDelete()}
-                data-testid='delete-img'
               >
                 Delete
               </button>
               <button
+                data-testid='cancel-img'
                 type='button'
                 className='btn primary-btn form-btn btn-w-fit btn-with-border gray-border-btn w-100 fw-bold'
                 data-bs-dismiss='modal'
