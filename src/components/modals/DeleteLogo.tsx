@@ -9,7 +9,7 @@ const DeleteLogo = ({ handleDelete }: Props) => {
   return (
     <div className='modal fade' id='DeleteLogo' tabIndex={-1} aria-labelledby='DeleteLogoLabel' aria-hidden='true'>
       <div className='modal-dialog modal-dialog-centered w-481'>
-        <div className='modal-content p-40'>
+        <div className='modal-content p-24'>
           <div className='modal-header border-0 p-0 align-items-center mb-40'>
             <h2 className='main-h mb-0'>Delete Photo?</h2>
 
