@@ -92,7 +92,7 @@ const ImageDropZone = forwardRef(
           <div className='d-flex align-items-center justify-content-center mt-2'>
             <button
               data-testid='change-img-btn'
-              className='btn-with-border fw-bold border-0 bg-transparent'
+              className='btn-with-border border-0 bg-transparent'
               type='button'
               onClick={handleChange}
             >
@@ -102,7 +102,7 @@ const ImageDropZone = forwardRef(
             {!!showDelete && (
               <button
                 data-testid='delete-btn'
-                className='btn-with-border fw-bold border-0 bg-transparent'
+                className='btn-with-border border-0 bg-transparent'
                 type='button'
                 data-bs-toggle='modal'
                 data-bs-target='#DeleteLogo'
