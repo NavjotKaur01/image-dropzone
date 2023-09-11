@@ -28,7 +28,7 @@ const DeleteLogo = ({ handleDelete }: Props) => {
               <button
                 data-testid='delete-img'
                 type='button'
-                className='btn primary-btn form-btn btn-w-fit btn-with-border w-100 fw-bold me-3 dlt-btn'
+                className='btn primary-btn form-btn btn-w-fit btn-with-border w-100 me-3 dlt-btn'
                 onClick={() => handleDelete()}
               >
                 Delete
@@ -36,7 +36,7 @@ const DeleteLogo = ({ handleDelete }: Props) => {
               <button
                 data-testid='cancel-img'
                 type='button'
-                className='btn primary-btn form-btn btn-w-fit btn-with-border gray-border-btn w-100 fw-bold'
+                className='btn primary-btn form-btn btn-w-fit btn-with-border gray-border-btn w-100'
                 data-bs-dismiss='modal'
                 aria-label='Close'
               >
