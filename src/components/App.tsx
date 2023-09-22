@@ -78,9 +78,13 @@ const ImageDropZone = forwardRef(
               <div {...getRootProps()} className='w-100 h-100 d-flex align-items-center justify-content-center'>
                 <input data-testid='dropZone' {...getInputProps()} />
                 {paths.length ? (
-                  paths.map((path) => (
-                    <div className='drop-img' key={path} style={{ backgroundImage: `url(${path})` }} data-testid='img-id' />
-                  ))
+                  paths.map((path) => {
+                    console.log(path)
+                    return (
+                      <div className='drop-img' key={path} style={{ backgroundImage: `url(data:image/png;base64, ${path})` }} data-testid='img-id' />
+                    )
+                  }
+                  )
                 ) : (
                   <p className='mb-0 dropzone-text p-2'>
                     {from === 'patient-forms' ? 'Upload one or more files (PDF, DOC, ...)' : 'Upload image (optional)'}
