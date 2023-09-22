@@ -13,13 +13,13 @@
 
 /* Circular cropping in personal photo step */
 
-.drop-zone img.personal-pic {
+/* .drop-zone img.personal-pic {
   border-radius: 100px;
   width: 180px !important;
   height: 180px !important;
   object-fit: unset !important;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
+} */
 
 .drop-zone img {
   object-fit: contain;
@@ -32,4 +32,16 @@
 
 .drop-zone div p {
   white-space: nowrap;
+}
+
+
+.drop-zone .drop-img {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    background-image: url(/public/static/img/Navu.jpg);
+    border-radius: 100px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }

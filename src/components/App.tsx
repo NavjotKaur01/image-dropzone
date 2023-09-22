@@ -79,12 +79,15 @@ const ImageDropZone = forwardRef(
                 <input data-testid='dropZone' {...getInputProps()} />
                 {paths.length ? (
                   paths.map((path) => (
-                    <img
-                      data-testid='img-id'
-                      className={`w-100 h-100 ${from === 'profilePicture' ? 'personal-pic' : 'business-logo'}`}
-                      key={path}
-                      src={path}
-                    />
+                    // <img
+                    //   data-testid='img-id'
+                    //   className={`w-100 h-100 ${from === 'profilePicture' ? 'personal-pic' : 'business-logo'}`}
+                    //   key={path}
+                    //   src={path}
+                    // />
+                    <div className='drop-img'>
+                          
+                    </div>
                   ))
                 ) : (
                   <p className='mb-0 dropzone-text p-2'>
