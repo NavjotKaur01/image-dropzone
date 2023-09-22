@@ -79,9 +79,8 @@ const ImageDropZone = forwardRef(
                 <input data-testid='dropZone' {...getInputProps()} />
                 {paths.length ? (
                   paths.map((path) => {
-                    console.log(path)
                     return (
-                      <div className='drop-img' key={path} style={{ backgroundImage: `url(data:image/png;base64, ${path})` }} data-testid='img-id' />
+                      <div className='drop-img' key={path} style={{ backgroundImage: "url('" + path + "')" }} data-testid='img-id' />
                     )
                   }
                   )
