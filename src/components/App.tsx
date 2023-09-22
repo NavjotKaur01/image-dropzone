@@ -78,14 +78,14 @@ const ImageDropZone = forwardRef(
               <div {...getRootProps()} className='w-100 h-100 d-flex align-items-center justify-content-center'>
                 <input data-testid='dropZone' {...getInputProps()} />
                 {paths.length ? (
-                  paths.map((_path) => (
+                  paths.map((path) => (
                     // <img
                     //   data-testid='img-id'
                     //   className={`w-100 h-100 ${from === 'profilePicture' ? 'personal-pic' : 'business-logo'}`}
                     //   key={path}
                     //   src={path}
                     // />
-                    <div className='drop-img'>
+                    <div className='drop-img'  key={path}>
                           
                     </div>
                   ))
