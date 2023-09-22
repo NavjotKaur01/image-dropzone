@@ -1,7 +1,7 @@
 .drop-zone {
   height: 200px;
   color: #b59aff;
-  background-image: url(/src/assets/images/custom-border.png);
+  background-image: url(./assets/images/custom-border.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
