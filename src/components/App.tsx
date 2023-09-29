@@ -101,7 +101,7 @@ const ImageDropZone = forwardRef(
               type='button'
               onClick={handleChange}
             >
-              <img src={Edit} className='me-2 edit-icon' />
+              <img src={Edit} className='m-right-5' />
               <span className='light-text'>Change</span>
             </button>
             {!!showDelete && (
@@ -112,7 +112,7 @@ const ImageDropZone = forwardRef(
                 data-bs-toggle='modal'
                 data-bs-target='#DeleteLogo'
               >
-                <img src={Trash} className='me-2' />
+                <img src={Trash} className='m-right-5' />
                 <span className='danger-text'>Delete</span>
               </button>
             )}
